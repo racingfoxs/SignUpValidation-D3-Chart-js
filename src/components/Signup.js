@@ -1,17 +1,13 @@
-import React from "react";
+import { React } from "react";
 import bg from "../assets/bg.jpg";
 import "./signup.scss";
-import { useNavigate } from "react-router-dom";
+import useForm from "./useForm";
+import validateInfo from "./ValidateInfo";
 
-const Signup = () => {
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Sumbit button Works");
-    navigate("/Dashboard");
-  };
-
+const Signup = ({submitForm}) => {
+  const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validateInfo);
+  console.log(errors.checkbox)
+ 
   return (
     <>
       <div className="container">
@@ -39,40 +35,83 @@ const Signup = () => {
                   Your email address
                 </label>
                 <br />
-                <input type="email" id="email" />
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  value={values.email}
+                  onChange={handleChange}
+                />
+                {errors.email && (
+                  <span className="__toast">{errors.email}</span>
+                )}
                 <br />
                 <label htmlFor="password" className="__inputTitle">
                   Your password
                 </label>
                 <br />
-                <input type="password" id="password" autoComplete="on" />
+                <input
+                  name="password"
+                  type="password"
+                  id="password"
+                  autoComplete="on"
+                  value={values.password}
+                  onChange={handleChange}
+                />
+                {errors.password && (
+                  <span className="__toast">{errors.password}</span>
+                )}
+
                 <br />
                 <label htmlFor="confirm_password" className="__inputTitle">
                   Confirm your password
                 </label>
                 <br />
                 <input
+                  name="confirm_password"
                   type="password"
                   id="confirm_password"
                   autoComplete="on"
+                  value={values.confirm_password}
+                  onChange={handleChange}
                 />
+                {errors.confirm_password && (
+                  <span className="__toast">{errors.confirm_password}</span>
+                )}
                 <br />
                 <label htmlFor="name" className="__inputTitle">
                   Your full name
                 </label>
                 <br />
-                <input type="text" id="name" />
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  value={values.name}
+                  onChange={handleChange}
+                />
+                {errors.name && <span className="__toast">{errors.name}</span>}
                 <br />
                 <label htmlFor="number" className="__inputTitle">
                   Your phone number
                 </label>
                 <br />
-                <input type="number" id="number" />
+                <input
+                  name="number"
+                  type="number"
+                  id="number"
+                  value={values.number}
+                  onChange={handleChange}
+                />
+                {errors.number && (
+                  <span className="__toast">{errors.number}</span>
+                )}
                 <br />
-                <input className="__inLine" type="checkbox" id="terms" />
-                <label className="__cbTitle" htmlFor="terms">
+                <input className="__inLine" name ="checkbox" type="checkbox" id="checkbox" value={values.checkbox} onChange={handleChange} />
+                <label className="__cbTitle" htmlFor="checkbox" >
                   I read and agree Terms and Conditions
-                </label>
+                </label>                
+                <span className="__toast">{errors.checkbox}</span>
                 <br />
                 <button
                   type="sumbit"
