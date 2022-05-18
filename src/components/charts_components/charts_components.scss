@@ -1,0 +1,31 @@
+:root {
+    --line: #FFF5F9; //change line color
+    --text: #000000; //change text color
+    --start: #D3FBD8; //change bar color
+    --end: #ED5E93; //change bar color
+  }
+
+.--chart--container line{
+    stroke: var(--line);
+}
+
+.--chart--container text{
+    fill: var(--text);
+}
+
+.--rect{
+    fill: url(#gradient)
+}
+
+.--start {
+    stop-color: var(--start);;
+  }
+.--end {
+    stop-color: var(--end);;
+  }
+
+.__bottomLabel{
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--text);
+}

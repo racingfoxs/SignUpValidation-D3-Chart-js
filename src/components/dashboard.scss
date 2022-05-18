@@ -1,0 +1,39 @@
+.--dashboard-container {
+  height: 100vh;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  .--wrapper-main{
+    padding: 1em;
+  }
+
+  .--wrapper {
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .--btn {
+    padding: 1rem;
+    transition-duration: 0.4s;
+    border: 2px solid red;
+    border-radius: 4em;
+    cursor: pointer;
+  }
+  .--btn--container {
+    display: block;
+  }
+  .--background {
+    background-color: white;
+    color: black;
+  }
+  .--btnStyle {
+    font-size: 1rem;
+  }
+
+  .--background:hover {
+    border: 2px solid White;
+    background-color: #ed5e93;
+    color: white;
+  }
+}
