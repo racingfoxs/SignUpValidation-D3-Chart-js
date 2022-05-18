@@ -22,12 +22,13 @@ export default function validateInfo(values) {
     errors.confirm_password = "Password Do not match.";
   }
 
-  //Name Validation by Raj
-  if (!values.name) {
-    errors.name = "Name Required*";
-  } else if (values.name.length < 3) {
-    errors.name = "Name Needs to be 3 Character or more.";
-  }
+  // //Name Validation by Raj
+  // if (!values.name) {
+  //   errors.name = "Name Required*";
+  // } else if (values.name.length < 3) {
+  //   errors.name = "Name Needs to be 3 Character or more.";
+  // }
+  
   //number Validation by Raj
   if (!values.number) {
     errors.number = "Contact Number Required*";
