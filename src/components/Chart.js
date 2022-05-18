@@ -1,4 +1,4 @@
-import { scaleBand, scaleLinear, max } from "d3";
+import { scaleBand, scaleLinear, max, format } from "d3";
 import { AxisBottom } from "./charts_components/AxisBottom";
 import { AxisLeft } from "./charts_components/AxisLeft";
 import { RectBar } from "./charts_components/RectBar";
@@ -26,9 +26,13 @@ const Chart = ({ data }) => {
 
   return (
     <>
-      <svg width={width} height={height} viewBox="0 0 768 432">
+      <svg viewBox="0 0 768 432" preserveAspectRatio="xMinYMin meet">
         <g transform={`translate(${margin.left}, ${margin.top})`}>
-          <AxisBottom xScale={xScale} innerHeight={innerHeight} />
+          <AxisBottom
+            xScale={xScale}
+            innerHeight={innerHeight}
+            tickFormat={format(".2s")}
+          />
           <AxisLeft yScale={yScale} />
           <text
             className="__bottomLabel"
@@ -44,6 +48,7 @@ const Chart = ({ data }) => {
             xScale={xScale}
             yValue={yValue}
             xValue={xValue}
+            tipFormat={format(".2s")}
           />
         </g>
       </svg>

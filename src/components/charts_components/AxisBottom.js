@@ -1,4 +1,4 @@
-export const AxisBottom = ({ xScale, innerHeight }) =>
+export const AxisBottom = ({ xScale, innerHeight, tickFormat }) =>
   xScale.ticks().map((tickValue) => (
     <g
       key={tickValue}
@@ -7,7 +7,7 @@ export const AxisBottom = ({ xScale, innerHeight }) =>
     >
       <line y2={innerHeight} />
       <text dy="1em" style={{ textAnchor: "middle" }} y={innerHeight + 3}>
-        {tickValue}
+        {tickFormat(tickValue)}
       </text>
     </g>
   ));
