@@ -1,5 +1,7 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import Chart from "./Chart";
+import "./dashboard.scss";
+import "./charts_components/charts_components.scss";
 
 const Dashboard = () => {
   const testData = [
@@ -21,22 +23,24 @@ const Dashboard = () => {
     setData(newData);
   };
 
-  useEffect(() => {}, [data]);
-
   return (
     <>
-      <div className="container">
-        <div className="container--flex --border">
+      <div className="--dashboard-container --flex">
+        <div className="--wrapper-main --border">
+        <div className="--wrapper">
           <Chart data={data} />
-          <div className="--btn--container">
-            <button
-              className="--btn --background --btnStyle"
-              onClick={randomHandler}
-            >
-              Random Data Generator
-            </button>
-          </div>
+      </div>
+      <div className="--wrapper --flex">
+      <div className="--btn--container">
+          <button
+            className="--btn --background --btnStyle"
+            onClick={randomHandler}
+          >
+            Random Data Generator
+          </button>
         </div>
+      </div>
+      </div>
       </div>
     </>
   );

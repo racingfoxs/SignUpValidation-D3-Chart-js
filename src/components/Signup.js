@@ -9,14 +9,14 @@ const Signup = ({submitForm}) => {
   
   return (
     <>
-      <div className="container">
-        <div className="container--flex --border">
+      <div className="container --flex">
+        <div className="container--flex --flex --border">
           <div className="__col">
-            <div className="__center __bgGrey">
+            <div className="__center --flex __bgGrey">
               <div className="__img">
                 <img className="__imgResize" src={bg} alt="Background" />
               </div>
-              <div className="__paragraph">
+              <div className="__paragraph --flex">
                 <span className="__title">Choose a data range</span>
                 <span className="__desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
