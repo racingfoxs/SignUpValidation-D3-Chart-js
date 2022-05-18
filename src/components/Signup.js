@@ -6,8 +6,7 @@ import validateInfo from "./ValidateInfo";
 
 const Signup = ({submitForm}) => {
   const { handleChange, values, handleSubmit, errors } = useForm(submitForm, validateInfo);
-  console.log(errors.checkbox)
- 
+  
   return (
     <>
       <div className="container">
