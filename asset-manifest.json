@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/signuppage/static/css/main.72b4eaa7.css",
-    "main.js": "/signuppage/static/js/main.4e8e3412.js",
-    "static/media/bg.jpg": "/signuppage/static/media/bg.241242c42a86c5cb86d9.jpg",
-    "index.html": "/signuppage/index.html",
-    "main.72b4eaa7.css.map": "/signuppage/static/css/main.72b4eaa7.css.map",
-    "main.4e8e3412.js.map": "/signuppage/static/js/main.4e8e3412.js.map"
+    "main.css": "/SignUpValidation-D3-Chart-js/static/css/main.72b4eaa7.css",
+    "main.js": "/SignUpValidation-D3-Chart-js/static/js/main.ab194c0a.js",
+    "static/media/bg.jpg": "/SignUpValidation-D3-Chart-js/static/media/bg.241242c42a86c5cb86d9.jpg",
+    "index.html": "/SignUpValidation-D3-Chart-js/index.html",
+    "main.72b4eaa7.css.map": "/SignUpValidation-D3-Chart-js/static/css/main.72b4eaa7.css.map",
+    "main.ab194c0a.js.map": "/SignUpValidation-D3-Chart-js/static/js/main.ab194c0a.js.map"
   },
   "entrypoints": [
     "static/css/main.72b4eaa7.css",
-    "static/js/main.4e8e3412.js"
+    "static/js/main.ab194c0a.js"
   ]
 }
