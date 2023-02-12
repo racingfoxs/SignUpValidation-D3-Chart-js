@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SignUpValidation-D3-Chart-js/static/css/main.72b4eaa7.css",
-    "main.js": "/SignUpValidation-D3-Chart-js/static/js/main.ab194c0a.js",
+    "main.js": "/SignUpValidation-D3-Chart-js/static/js/main.e7fcf61c.js",
     "static/media/bg.jpg": "/SignUpValidation-D3-Chart-js/static/media/bg.241242c42a86c5cb86d9.jpg",
     "index.html": "/SignUpValidation-D3-Chart-js/index.html",
     "main.72b4eaa7.css.map": "/SignUpValidation-D3-Chart-js/static/css/main.72b4eaa7.css.map",
-    "main.ab194c0a.js.map": "/SignUpValidation-D3-Chart-js/static/js/main.ab194c0a.js.map"
+    "main.e7fcf61c.js.map": "/SignUpValidation-D3-Chart-js/static/js/main.e7fcf61c.js.map"
   },
   "entrypoints": [
     "static/css/main.72b4eaa7.css",
-    "static/js/main.ab194c0a.js"
+    "static/js/main.e7fcf61c.js"
   ]
 }
